@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{62148C40-9746-4B3C-9F64-5EE72A3461B8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twilio-dotnet", "twilio-dotnet-mvc4-2012\twilio-dotnet.csproj", "{E0B3DEB2-3001-4E5A-8F9A-74532311C420}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0B3DEB2-3001-4E5A-8F9A-74532311C420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B3DEB2-3001-4E5A-8F9A-74532311C420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B3DEB2-3001-4E5A-8F9A-74532311C420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B3DEB2-3001-4E5A-8F9A-74532311C420}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
