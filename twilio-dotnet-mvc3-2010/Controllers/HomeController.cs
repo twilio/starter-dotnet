@@ -18,7 +18,7 @@ namespace twilio_dotnet.Controllers
             return View();
         }
 
-        public ActionResult Sms(string to)
+        public ActionResult Message(string to)
         {
             client = new TwilioRestClient(Settings.AccountSid, Settings.AuthToken);
 
@@ -29,36 +29,28 @@ namespace twilio_dotnet.Controllers
                 return new System.Web.Mvc.HttpStatusCodeResult(500, result.RestException.Message);
             }
 
-            return Json(new { error = false });
+            return Content("Message inbound!");
         }
 
         public ActionResult Call(string to)
         {
             client = new TwilioRestClient(Settings.AccountSid, Settings.AuthToken);
 
-            var result = client.InitiateOutboundCall(Settings.TwilioNumber, to, Settings.BaseUrl + Url.Action("Hello"));
+            var result = client.InitiateOutboundCall(Settings.TwilioNumber, to, "http://twimlets.com/message?Message%5B0%5D=http://demo.kevinwhinnery.com/audio/zelda.mp3");
 
             if (result.RestException != null)
             {
                 return new System.Web.Mvc.HttpStatusCodeResult(500, result.RestException.Message);
             }
 
-            return Json(new { error = false });
-        }
-
-        public ActionResult Capability()
-        {
-            var capability = new TwilioCapability(Settings.AccountSid, Settings.AuthToken);
-            capability.AllowClientOutgoing("AP784bd34e34fab9759b8e91d3ef3680b9");
-
-            return Json(new { token = capability.GenerateToken() });
+            return Content("Call enroute!");
         }
 
         public ActionResult Hello()
         {
             var response = new TwilioResponse();
-            response.Say("Hello there! Your Twilio environment has been configured.");
-            response.Say("Good luck during the workshop!", new { Voice = "woman" });
+            response.Say("Hello there! You have successfully configured a web hook.");
+            response.Say("Good luck on your Twilio quest!", new { Voice = "woman" });
             return TwiML(response);
         }
     }
