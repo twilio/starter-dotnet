@@ -28,7 +28,7 @@ namespace twilio_dotnet.Handlers
             }
             else
             {
-                context.Response.Write("{ \"error\":false }");
+                context.Response.Write("Call enroute!");
             }
         }
 

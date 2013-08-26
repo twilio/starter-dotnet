@@ -1,47 +1,155 @@
-﻿/* 
-	http://meyerweb.com/eric/tools/css/reset/ 
-	v2.0 | 20110126
-  	License: none (public domain)
-*/
+/* Eric Meyer reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-input {
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+/* Global Styles */
+html, body {
+    background-color:black;
 }
 
-*, body, html {
-	font-family: 'Helvetica', sans-serif;
+html, body, * {
+    font-family:"Press Start 2P";
+    font-size:18px;
+    color:white;
 }
 
-body {
-	background: -moz-radial-gradient(center, circle cover, #fff 0%, #efefef 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(100%, #efefef));
-	background: -webkit-radial-gradient(center, circle cover, #fff 0%, #efefef 100%);
- 	background: -o-radial-gradient(center, circle cover, #fff 0%, #efefef 100%);
- 	background: -ms-radial-gradient(center, circle cover, #fff 0%, #efefef 100%);
- 	background: radial-gradient(center, circle cover, #fff 0%, #efefef 100%);
- 	background-color: #efefef;
+form {
+    text-align:center;
+}
+
+h1 {
+    font-size: 28px;
+    margin:10px 0;
+    line-height: 1.3em;
+}
+
+h3 {
+    font-size:18px;
+    margin:10px 0;
+    color:red;
+}
+
+pre {
+    font-family: Monaco, monospace, sans-serif;
+    font-size:12px;
+    padding:10px;
+    background-color:#232323;
+    border:1px #fff solid;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5em;
+    font-size:14px;
+    margin-bottom: 10px;
+}
+
+a {
+    color:orange;
+}
+
+b {
+    color:yellow;
+    font-weight:bold;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    background-color:black;
+    border:5px #787878 dashed;
+    padding:10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    outline:none;
+}
+
+button, input[type=button], input[type=submit] {
+    margin-top: 10px;
+    text-align: center;
+    border:8px solid;
+    background-color: #000;
+    padding:10px;
+    color:#fff;
+}
+
+button:hover, input[type=button]:hover, input[type=submit]:hover {
+    border-style:dashed;
+    cursor:pointer;
+}
+
+.padding10 {
+    padding:10px;
 }
 
 #content {
-	position:absolute;
-	height:620px;
-	width:400px;
-	margin-top: -310px;
-	margin-left: -200px;
-	top:50%;
-	left:50%;
-	text-align:center;
+    width:900px;
+    margin:20px auto 10px auto;
 }
 
-input, button {
-	display:block;
-	width:100%;
-	height:50px;
-	margin-top:10px;
-	font-size: 22px;
-	font-weight: bold;
-	text-align: center;
+#flash {
+    color:yellow;
+    text-align:center;
+    border:2px dashed;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+#flash p, #flash a {
+    color:yellow;
+    margin:0;
+}
+
+#tabs {
+    list-style:none;
+    margin-bottom:40px;
+    text-align: center;
+}
+
+#tabs li {
+    display:inline;
+    cursor:pointer;
+    padding:10px;
+    margin-right:20px;
+    color:gray;
+}
+
+#tabs li.current {
+    background-color: red;
+    color:white;
+}
+
+#call-demo {
+    display:none;
+}
+
+#welcome {
+    float:left;
+    width:300px;
+    text-align:center;
+    margin:0 20px 20px 0;
+}
+
+#welcome h1 span {
+    color:blue;
+}
+
+#footer {
+    clear:both;
+    width:900px;
+    font-size:16px;
+    text-align: center;
+    margin:0 auto 10px auto;
+    padding:50px 10px 10px 10px;
+}
+
+#footer span {
+    color:red;
+}
+
+#footer p {
+    font-size:12px;
+    margin-top:10px;
+}
+
+#footer img {
+    margin-bottom:-10px;
 }

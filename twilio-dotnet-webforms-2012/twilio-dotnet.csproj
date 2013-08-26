@@ -75,18 +75,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\app.css" />
+    <Content Include="Content\dotnet_shield256.png" />
     <Content Include="Content\favicon.png" />
-    <Content Include="Content\img\twilio.png" />
+    <Content Include="Content\heart.gif" />
+    <Content Include="Content\js\form.js" />
+    <Content Include="Content\js\forms.js" />
+    <Content Include="Content\js\tabs.js" />
+    <Content Include="Content\js\ui.js" />
+    <Content Include="Content\TwilioQuest32.png" />
     <Content Include="Default.aspx" />
-    <Content Include="Scripts\app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handlers\Call.ashx.cs">
       <DependentUpon>Call.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Handlers\Capability.ashx.cs">
-      <DependentUpon>Capability.ashx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -98,21 +100,18 @@
     <Compile Include="Handlers\Hello.ashx.cs">
       <DependentUpon>Hello.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Handlers\Sms.ashx.cs">
-      <DependentUpon>Sms.ashx</DependentUpon>
+    <Compile Include="Handlers\Message.ashx.cs">
+      <DependentUpon>Message.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Handlers\Capability.ashx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Handlers\Sms.ashx" />
+    <Content Include="Handlers\Message.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Handlers\Call.ashx" />
