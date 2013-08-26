@@ -7,9 +7,9 @@ using Twilio;
 namespace twilio_dotnet.Handlers
 {
     /// <summary>
-    /// Summary description for Sms
+    /// Summary description for Message
     /// </summary>
-    public class Sms : IHttpHandler
+    public class Message : IHttpHandler
     {
         TwilioRestClient client;
 

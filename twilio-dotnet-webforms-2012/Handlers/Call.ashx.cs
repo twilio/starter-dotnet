@@ -19,7 +19,7 @@ namespace twilio_dotnet.Handlers
 
             client = new TwilioRestClient(Settings.AccountSid, Settings.AuthToken);
 
-            var result = client.InitiateOutboundCall(Settings.TwilioNumber, context.Request["to"], Settings.BaseUrl + "/Hello.ashx");
+            var result = client.InitiateOutboundCall(Settings.TwilioNumber, context.Request["to"], "http://twimlets.com/message?Message%5B0%5D=http://demo.kevinwhinnery.com/audio/zelda.mp3");
 
             if (result.RestException != null)
             {

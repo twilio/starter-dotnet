@@ -16,8 +16,8 @@ namespace twilio_dotnet.Handlers
             context.Response.ContentType = "application/xml";
 
             var response = new TwilioResponse();
-            response.Say("Hello there! Your Twilio environment has been configured.");
-            response.Say("Good luck during the workshop!", new { Voice = "woman" });
+            response.Say("Hello there! You have successfully configured a web hook.");
+            response.Say("Good luck on your Twilio quest!", new { Voice = "woman" });
            
             context.Response.Write(response.ToString());
         }
