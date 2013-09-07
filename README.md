@@ -32,7 +32,7 @@ Once you've opened the correct solutoin file, before you can run any of these pr
 
 Build the project to make sure the nuget dependencies are downloaded and installed and then run the project.  Once Visual Studio launches the browser enter your mobile number in the fields provided, and test both SMS text messages and phone calls being sent to the mobile number you provide. The web UI should look something like this:
 
-![node ui](http://imgur.com/isBRAWL)
+![node ui](http://i.imgur.com/isBRAWL.png)
 
 If your phone receives both a call and text message, you're good to go!
 
