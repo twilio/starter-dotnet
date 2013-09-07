@@ -30,7 +30,11 @@ Once you've opened the correct solutoin file, before you can run any of these pr
 * `AuthToken` : Your Twilio "auth token" - it's your password for the Twilio API.  This and the account SID (above) can be found [on your account dashboard](https://www.twilio.com/user/account).
 * `TwilioNumber` : A Twilio number that you own, that can be used for making calls and sending messages.  You can find a list of phone numbers you control (and buy another one, if necessary) [in the account portal](https://www.twilio.com/user/account/phone-numbers/incoming).
 
-Build the project to make sure the nuget dependencies are downloaded and installed and then run the project.
+Build the project to make sure the nuget dependencies are downloaded and installed and then run the project.  Once Visual Studio launches the browser enter your mobile number in the fields provided, and test both SMS text messages and phone calls being sent to the mobile number you provide. The web UI should look something like this:
+
+![node ui](http://imgur.com/isBRAWL)
+
+If your phone receives both a call and text message, you're good to go!
 
 ## Begin Questing!
 This is but your first step into a larger world.  [Return to TwilioQuest](http://quest.twilio.com) to continue your adventure.  Huzzah!
